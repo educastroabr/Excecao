@@ -98,11 +98,11 @@ end;
 
 function TCustomExcecao.EMail: Boolean;
 begin
-  (*
+  (********************************************************************************
   Result := EnviarEmail(pvGmail, 'usuario', 'Senha', 'Remetente Nome',
                         'Remetente Email', ['Destino1@provedor.com'], 'Assunto',
                         'Corpo Email', ['PAnexo1.doc']);
-  *)
+  ********************************************************************************)
 end;
 
 procedure TCustomExcecao.Excecao(Sender: TObject; E: Exception;

@@ -54,9 +54,9 @@ begin
 end;
 
 initialization
-  EExcecao := TExcecao.Create(Nil);
-  EExcecao.AtivarLog := True;
-  EExcecao.AtivarExcecao := True;
+  EExcecao                := TExcecao.Create(Nil);
+  EExcecao.AtivarLog      := True;
+  EExcecao.AtivarExcecao  := True;
   EExcecao.AtivarMensagem := True;
 
 finalization
