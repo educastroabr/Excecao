@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{578656B6-8D2C-4147-8F4D-6D5A767A9873}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Excecao.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Excecao">
+        <MSBuild Projects="Excecao.dproj"/>
+    </Target>
+    <Target Name="Excecao:Clean">
+        <MSBuild Projects="Excecao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Excecao:Make">
+        <MSBuild Projects="Excecao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Excecao"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Excecao:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Excecao:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
