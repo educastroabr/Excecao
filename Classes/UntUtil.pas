@@ -5,6 +5,7 @@ interface
 uses
   UntTipos;
 
+
   /// <summary> Função para retornar valor verdadeiro ou falso de acordo com a condição </summary>
   function  iif(Condicao: Boolean; Verdadeiro, Falso: Variant): Variant;
   /// <summary> Função para retornar Data e Hora padrão </summary>

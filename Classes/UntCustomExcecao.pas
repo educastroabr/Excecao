@@ -98,11 +98,11 @@ end;
 
 function TCustomExcecao.EMail: Boolean;
 begin
-  (*
+  (********************************************************************************
   Result := EnviarEmail(pvGmail, 'usuario', 'Senha', 'Remetente Nome',
                         'Remetente Email', ['Destino1@provedor.com'], 'Assunto',
                         'Corpo Email', ['PAnexo1.doc']);
-  *)
+  ********************************************************************************)
 end;
 
 procedure TCustomExcecao.Excecao(Sender: TObject; E: Exception;
@@ -228,7 +228,7 @@ begin
     if not (DirectoryExists(FDiretorio)) then
       ForceDirectories(FDiretorio);
   end;
-  Result := Result + iif(Copy(Result, Length(Result), 1) = '\', EmptyStr, '\') + Application.Name + 'Log\';
+  Result := Result + iif(Copy(Result, Length(Result), 1) = '\', EmptyStr, '\') + Application.Name;
   if not DirectoryExists(Result) then
     ForceDirectories(Result);
 end;
