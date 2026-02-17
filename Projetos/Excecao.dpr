@@ -2,7 +2,7 @@ program Excecao;
 
 uses
   Vcl.Forms,
-  UntFrmPrincipal in '..\Furmularios\UntFrmPrincipal.pas' {Form1},
+  UntFrmPrincipal in '..\Formularios\UntFrmPrincipal.pas' {Form1},
   UntExcecao in '..\Classes\UntExcecao.pas',
   UntCustomExcecao in '..\Classes\UntCustomExcecao.pas',
   UntDialogMessage in '..\Classes\UntDialogMessage.pas',
